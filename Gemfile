@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
+gem 'mysql2', '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -19,7 +20,6 @@ end
 
 group :production do
   gem 'unicorn'
-  gem 'mysql2'
 end
 
 group :development, :test do
@@ -31,4 +31,3 @@ group :development, :test do
   gem 'capybara'
   gem 'shoulda'
 end
-
